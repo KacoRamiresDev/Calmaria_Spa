@@ -1,0 +1,37 @@
+@use '../abstract/var';
+@use '../abstract/mixins';
+
+#servico {
+    background: var.$color-background;
+    padding: 5rem 2rem;
+
+    @include mixins.desktop {
+        margin-top: 3rem
+    }
+
+
+    .cards {
+        @include mixins.flex(flex, column, center);
+        gap: 3rem;
+
+        @include mixins.tablet {
+            @include mixins.margem(80%);
+        }
+
+        @include mixins.desktop {
+            @include mixins.flex(flex, row, stretch);
+            width: 90%;
+            gap: 2rem;
+        }
+    }
+
+    .card {
+        @include mixins.border(2rem, none, 35px);
+        background: var.$color-background-cards;
+        text-align: center;
+
+        h3 {
+            @include mixins.font-style(var.$font-title, 1.6rem, var.$color-text);
+        }
+    }
+}

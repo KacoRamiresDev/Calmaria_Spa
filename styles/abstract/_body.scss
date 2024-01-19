@@ -1,0 +1,17 @@
+@use '../abstract/var';
+@use '../abstract/mixins';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var.$font-text;
+    font-size: .94rem;
+    font-weight: 400;
+    color: var.$color-text;
+    line-height: 1.5;
+    
+    @include mixins.tablet {
+        font-size: 1.375rem;
+    }
+}

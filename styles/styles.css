@@ -1,0 +1,514 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.94rem;
+  font-weight: 400;
+  color: #0C0421;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.375rem;
+  }
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFF 96.87%);
+  padding: 3rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-bottom: 6rem;
+  }
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav img {
+  max-width: 270px;
+  width: 50%;
+}
+header nav .linha {
+  border-top: 1px solid #0C0421;
+  width: 90%;
+  margin: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  header nav .linha {
+    width: 80%;
+  }
+}
+header nav ul {
+  display: inline-flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  header nav ul li a {
+    font-size: 1.375rem;
+  }
+}
+header #home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  header #home {
+    max-width: 1040px;
+    text-align: start;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header #home {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+header #home h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9rem;
+  color: #0C0421;
+}
+header #home h1 span {
+  color: #4E75FF;
+}
+header #home .btn-main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 36px;
+  background-color: #CAD4FA;
+  margin-bottom: 1.5rem;
+}
+header #home .btn-main:hover {
+  transition: 0.3s;
+  background-color: #4E75FF;
+}
+@media screen and (min-width: 768px) {
+  header #home .btn-main {
+    width: 50%;
+  }
+}
+header #home img {
+  max-width: 500px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  header #home img {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header #home img {
+    max-width: 747px;
+  }
+}
+
+#nosso-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  #nosso-espaco {
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #nosso-espaco .detalhes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+#nosso-espaco .detalhes .imgs-espaco {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  #nosso-espaco .detalhes .imgs-espaco {
+    width: 50%;
+  }
+}
+#nosso-espaco .detalhes .img-espacos {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #nosso-espaco .detalhes .img-espacos {
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #nosso-espaco .detalhes .img-espacos {
+    height: auto;
+  }
+}
+#nosso-espaco .detalhes:nth-child(n+2) {
+  flex-direction: row-reverse;
+}
+#nosso-espaco .img-espaco {
+  max-width: 500px;
+  width: 48%;
+}
+@media screen and (min-width: 768px) {
+  #nosso-espaco .img-espaco {
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #nosso-espaco .img-espaco {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #nosso-espaco .espaco-textos {
+    width: 50%;
+  }
+}
+#nosso-espaco .espaco-textos .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #4E75FF;
+}
+@media screen and (min-width: 768px) {
+  #nosso-espaco .espaco-textos .titulo {
+    font-size: 1.9rem;
+  }
+}
+#nosso-espaco .espaco-textos img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#servico {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFF 96.87%);
+  padding: 5rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+  #servico {
+    margin-top: 3rem;
+  }
+}
+#servico .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (min-width: 768px) {
+  #servico .cards {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #servico .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 90%;
+    gap: 2rem;
+  }
+}
+#servico .card {
+  padding: 2rem;
+  border: none;
+  border-radius: 35px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  text-align: center;
+}
+#servico .card h3 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+
+#desconto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #desconto {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#desconto .desconto-form {
+  margin: 0 auto;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  #desconto .desconto-form {
+    width: 75%;
+  }
+}
+#desconto .desconto-form h4 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+@media screen and (min-width: 768px) {
+  #desconto .desconto-form h4 {
+    font-size: 1.9rem;
+    margin-bottom: 0;
+  }
+}
+#desconto .desconto-form p {
+  font-size: 1.375rem;
+}
+#desconto .desconto-form .input-btn {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #desconto .desconto-form .input-btn {
+    padding: 0;
+    border: solid 1px #4E75FF;
+    border-radius: 32px;
+    flex-direction: row;
+    max-width: 790px;
+    width: 80%;
+    gap: 0;
+    margin-bottom: 4rem;
+  }
+}
+#desconto .desconto-form .input-btn input, #desconto .desconto-form .input-btn button {
+  padding: 1.2rem;
+  border: solid 1px #4E75FF;
+  border-radius: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+  width: 90%;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  #desconto .desconto-form .input-btn input, #desconto .desconto-form .input-btn button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0;
+    width: 513.5px;
+    margin-left: 1rem;
+  }
+}
+#desconto .desconto-form .input-btn button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: #fff;
+  border: none;
+  background-color: #CAD4FA;
+}
+#desconto .desconto-form .input-btn button:hover {
+  transition: 0.3s;
+  background-color: #4E75FF;
+}
+@media screen and (min-width: 768px) {
+  #desconto .desconto-form .input-btn button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0 35px 35px 0;
+    width: 276.5px;
+  }
+}
+#desconto img {
+  rotate: 90deg;
+  max-width: 89px;
+  width: 30%;
+}
+@media screen and (min-width: 768px) {
+  #desconto img {
+    rotate: none;
+    max-height: 200px;
+    width: auto;
+  }
+}
+
+#contatos {
+  margin: 0 auto;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  #contatos {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #contatos {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+  }
+}
+#contatos .contatos-imgs {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  #contatos .contatos-imgs {
+    width: 50%;
+  }
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #contatos .contatos-imgs img {
+    max-height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 10%;
+       object-position: 0% 10%;
+    border-radius: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #contatos .contatos-imgs img {
+    max-height: none;
+  }
+}
+#contatos .contatos-imgs .contatos-img {
+  width: 48%;
+  margin-top: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  #contatos .contatos-imgs .contatos-img {
+    margin-top: 2rem;
+    max-height: 345px;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #contatos .contatos-imgs .contatos-img {
+    max-height: none;
+  }
+}
+#contatos .contatos-form {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFF 96.87%);
+  margin: 2rem 0;
+  text-align: center;
+}
+#contatos .contatos-form h4 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #4E75FF;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  #contatos .contatos-form {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  #contatos .contatos-form h4 {
+    font-size: 1.9rem;
+  }
+  #contatos .contatos-form p {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #contatos .contatos-form {
+    width: 50%;
+    margin: 0;
+  }
+}
+#contatos .contatos-form .inputs, #contatos .contatos-form .inputs .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#contatos .contatos-form .inputs input, #contatos .contatos-form .inputs .btn, #contatos .contatos-form .inputs .form-group textarea, #contatos .contatos-form .inputs .form-group input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: #0C0421;
+  width: 100%;
+}
+#contatos .contatos-form .inputs .form-group {
+  gap: 0.3rem;
+  width: 90%;
+}
+#contatos .contatos-form .inputs .form-group label {
+  font-weight: 600;
+}
+#contatos .contatos-form .inputs .btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #CAD4FA;
+}
+#contatos .contatos-form .inputs .btn:hover {
+  transition: 0.3s;
+  background-color: #4E75FF;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #0C0421;
+  padding: 1rem;
+  background-color: #E8F5C8;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
